@@ -1,43 +1,92 @@
 .container {
-    margin-top: 200px;
-    margin-left: 30%;
     display: flex;
-    width: 200px;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
+    background-color: rgb(87, 182, 245);
 }
 
-.popover {
-    display: none;
-    margin-top: 5px;
-    border-style: ridge;
-    text-align: left;
-    padding: 5px;
-    width: inherit;
-    position: absolute;
-    bottom: 50px;
-}
-
-.popover__active {
-    display: block;
-}
-
-.popover__title {
-    background-color: hsl(0, 0%, 90%);
-    padding: 5px;
-    font-size: large;
-}
-
-.popover__text {
-    padding: 5px;
-    
-}
-
-.button {
+h3 {
     padding: 10px;
-    background-color: rgb(248, 85, 85);
-    font-size: 15px;
+    margin: 0;
+}
+
+.container__column {
+    background-color: rgb(228, 222, 222);
+    border-style: solid;
+    border-color: rgb(185, 184, 184);
+    border-width: 7px;
+    height: min-content;
+    width: 300px;
+    margin: 5px;
+} 
+
+.container__card__add {
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
+}
+
+.container__task {
+    position: relative;
+    max-width: 300px;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.container__task__textarea {
+    min-height: 50px;
+    width: 100%;
+    border-style: none;
+    border-radius: 5px;
+    background-color: white;
+    resize: vertical;
+}
+
+.container__task__textarea:focus {
+    outline: 2px solid rgb(47, 213, 255);
+    outline-offset: 3px;
+}
+
+.container__task__input {
+    position: relative;
+    height: 20px;
+    width: 100%;
+    border-style: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.task__cross {
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    cursor: pointer;
+}
+
+.container__card__footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+.container__card__button {
+    margin-right: 10px;
+    background-color: rgb(43, 138, 24);
+    border-radius: 5px;
+    border-style: none;
     color: white;
-    border-radius: 7px;
+    height: 30px;
+}
+
+.cross {
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.drive {
+    cursor: grabbing
 }

@@ -1,4 +1,5 @@
 import "./css/style.css";
-import click from "./js/ClickPopover";
+import addCard from "./js/AddCard";
+import Task from "./js/Task";
 
-click();
+addCard();
